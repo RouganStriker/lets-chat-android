@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@color/background_material_light">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/sidebar_avatar"
+        android:src="@drawable/ic_face_black_24dp"
+        android:scaleType="fitCenter"
+        android:paddingRight="5dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="User"
+            android:gravity="center_horizontal|left"
+            android:id="@+id/sidebar_display_name"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:text="\@User"
+            android:gravity="center_horizontal|left"
+            android:id="@+id/sidebar_username"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

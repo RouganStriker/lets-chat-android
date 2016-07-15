@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/room_list_row_title"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:text="Title"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/room_list_row_slug"
+        android:textSize="15dp"
+        android:text="Slug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/room_list_row_title"
+        android:paddingLeft="10dp"
+        android:layout_alignBaseline="@+id/room_list_row_title" />
+    <Switch
+        android:id="@+id/room_list_row_toggle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/room_list_row_description"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/room_list_row_title"
+        android:text="Description">
+    </TextView>
+
+</RelativeLayout>
